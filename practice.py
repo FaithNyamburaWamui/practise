@@ -115,7 +115,7 @@ def sum_numbers_and_input():
         num = int(input(f"Enter number: "))
         numbers_list.append(num)
 
-    # Calculate the sum of the numbers in the list and the additional number
+    # Calculate the sum of the numbers in the list
     total_sum = sum(numbers_list)
 
     # Display the sum
@@ -124,8 +124,41 @@ def sum_numbers_and_input():
 # Call the function to execute the program
 sum_numbers_and_input()
 
-      
+
+def multiplication():
+    multiple=1
+    s=[1,2,3,4]
+    for i in s:
+        multiple*=s
+        print(s)
+
+    multiplication()
+
+class Ankara:
+    def __init__(self,mood,temp):
+        self.mood=mood
+        self.temp=temp
+
+    def check_temp(self):
+        if self.temp <=15:
+            print("It is hot")
+        elif self.temp>15 and self.temp>=30:
+            print("It is moderate")
+        else:
+            print("It is hot")
+
+    def check_mood(self):
+        if self.mood=="Happy":
+            print("Fabric is spotted")
+        elif self.mood=="Neutral":
+            print("Fabric remain the same")
+        elif self.mood=="Sad":
+            print("Fabric is animal print")
+        else:
+            print("Fabric not found")
 
 
+
+    
         
 
