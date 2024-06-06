@@ -72,3 +72,41 @@ Book.sleep();
 Book.wakeUp();
 Book.runProgram("Trade mark");
 Book.saveFile("Favourite books");
+
+
+const Loptop={
+    brand:"HP",
+    model:"Elite",
+    screenSize:20,
+    processor:"Macbook",
+    RAM:20,
+    isSleep:true,
+
+    sleep(){
+        if(this.isSleep!=true){
+            this.isSleep=true
+        }
+        console.log(this.isSleep)
+    },
+
+    wakeUp(){
+        if(this.isSleep!=false){
+            this.isSleep=false
+        }
+        console.log(this.isSleep)
+    },
+
+    runProgram(programName){
+       console.log(`Your program is ${programName}`)
+    },
+
+    saveFile(fileName){
+       console.log(`The file name is ${fileName}`)
+    }
+}
+
+Loptop.sleep();
+Loptop.wakeUp();
+Loptop.runProgram("Local link");
+Loptop.saveFile("Document");
+
